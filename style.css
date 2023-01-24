@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+main {
+  margin: 10vh auto 0px auto;
+  width: 550px;
+  height: 550px;
+  background: #ecfdf5;
+  font-family: "Inter";
+}
+
+main header {
+  width: 354px;
+  height: 80px;
+  padding: 75px 0px 0px 52px;
+  
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.05em;
+
+  color: #2b283a;
+}
+
+main p:nth-of-type(1) {
+  width: 372px;
+  height: 28px;
+  padding-left: 52px;
+
+  /* text-xl/leading-7/font-normal */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.21rem;
+  line-height: 28px;
+
+  color: #6b7280;
+}
+
+main button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 17px 9px 15px;
+  gap: 12px;
+  cursor: pointer;
+
+  width: 191px;
+  height: 42px;
+  margin-left: 52px;
+  margin-top: 25px;
+
+  background: #10b981;
+  /* shadow/sm */
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+main div {
+  margin-left: 52px;
+}
+main div:first-of-type {
+  margin-bottom: 25px;
+}
+
+main div:first-of-type input:nth-of-type(2) {
+  border: 1px solid #FFF;
+  border-radius: 6px;
+  background-color: #273549;
+  color: #5def92;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0px 0px 0px 40px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  margin: 0px;
+  appearance: none;
+}
+
+main div:nth-of-type(2) span {
+  display: block;
+}
+main div:nth-of-type(2) span::before {
+  content: "\A";
+  white-space: pre;
+}
+
+main div label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #6b7280;
+}
+
+main p:nth-of-type(2) {
+  width: 211px;
+  height: 39px;
+  margin-left: 52px;
+
+  background: #273549;
+  border-radius: 6px;
+  text-align: center;
+  overflow: hidden;
+}
+
+main p:nth-of-type(3) {
+  width: 211px;
+  height: 39px;
+
+  position: relative;
+  transform: translate(285px, -55px);
+  background: #273549;
+  border-radius: 6px;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+main p span {
+  width: 180px;
+  height: 32px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;    /* identical to box height, or 200% */
+  color: #5def92;
+}
+
+
+.pass-length .details{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 52px;
+  width: 80%;
+}
+.pass-length input{
+  margin-left: 52px;
+  width: 80%;
+  height: 5px;
+  margin-top: 0.63rem;
+  background: #DFDFDF;
+  border-radius: 15px;  
+}

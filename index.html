@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Random Password Generator</title>
+</head>
+
+<body>
+  <main>
+    <header>Generate a random password</header>
+    <p>Never use an insecure password again.</p>
+
+    <div>
+      <label for="characterAmountNumber">Number of characters</label>
+      <input type="range" min="1" max="30" value="15" step="1" id="characterAmountRange"
+        oninput="updateCharacterAmount()" />
+      <input type="number" min="1" max="50" value="10" id="characterAmountNumber" />
+    </div>
+    <div>
+      <label for="includeSpecial">Include Special Characters</label>
+      <input type="checkbox" id="includeSpecial" value="special" />
+      <span></span>
+
+      <label for="includeNumbers">Include Numbers</label>
+      <input type="checkbox" id="includeNumbers" value="numbers" />
+      <span></span>
+
+      <label for="includeLowercase">Include Lowercase Characters</label>
+      <input type="checkbox" id="includeLowercase" value="lowercase" />
+      <span></span>
+
+      <label for="includeUppercase">Include Uppercase Characters</label>
+      <input type="checkbox" id="includeUppercase" value="uppercase" />
+    </div>
+
+    <button type="button" id="button">Generate password</button>
+
+    <p><span id="password-one"></span></p>
+    <p><span id="password-two"></span></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
